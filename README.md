@@ -1,6 +1,9 @@
 # ObjMakerJS
-A JQuery plugin for dynamic creation of JS objects in the DOM
-Allows the user to dynamically compose a Javascript object that is arbitarily composed of floats, strings, arrays and nested-objects.
+A JQuery plug-in for dynamic creation of JS objects in the DOM
+Allows the user to dynamically compose a Javascript object that is arbitrarily composed of floats, strings, arrays and nested-objects.
+
+fiddle: https://jsfiddle.net/7b5rr7s2/embedded/result/
+
 instantiate a div/span:
 ```html
 <div id="maker_space"></div>
@@ -44,10 +47,10 @@ the arguments 'args' that these two above functions take are:
 
 the configuration of the maker obeys sensible defaults, however these can be changed. the object can be composed of:
 * include_spacers - boolean, true or false whether or not to insert 'spacer' divs between elements (can be usefull for styling - default = false)
-* refreshHandler - function called with maker's object as first parameter everytime the object is changed (default = do-nothing)
+* refreshHandler - function called with maker's object as first parameter every-time the object is changed (default = do-nothing)
 * modifiable_form - boolean, true or false whether or not the User can modify the form of the object, or only just its values (default = true)
 * class_names - the names of all the classes used, recognised and assigned throughout the maker's operation (defaults below)
-* drop_labels - the labels used from the 'select-type' drop-down boxes, can redily be changed but should be unique (defaults below)
+* drop_labels - the labels used from the 'select-type' drop-down boxes, can readily be changed but should be unique (defaults below)
 
 # Default Class_Names
 
