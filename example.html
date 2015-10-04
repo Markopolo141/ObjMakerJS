@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+        <link href="example.css" rel="stylesheet" type="text/css">
+        <script src='ObjMaker.js'></script>
+    </head>
+    <h2>Openly configurable:</h2>
+    <div id="no1"></div>
+    <div style="min-height: 40px;"></div>
+    JSON:
+    <div id="no1JSON"></div>
+    
+    <h2>Closed configuration:</h2>
+    <div id="no2"></div>
+    <div style="min-height: 40px;"></div>
+    JSON:
+    <div id="no2JSON"></div>
+    
+    <script>
+        var obj = {random:3,initial:"fe",object:[3,68],configuration:{yay:3}}
+        $("#no1").makeObjEditor(obj, {"refreshHandler": function (obj) {$("#no1JSON").text(JSON.stringify(obj))}, "modifiable_form":true , "include_spacers":true})
+        $("#no2").makeObjEditor(obj, {"refreshHandler": function (obj) {$("#no2JSON").text(JSON.stringify(obj))}, "modifiable_form":false, "include_spacers":true})
+    </script>
+</html>
